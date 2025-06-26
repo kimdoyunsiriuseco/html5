@@ -5,6 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+
+ <script>
+       navigator.geolocation.getCurrentPosition( (position) => {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        const accuracy = position.coords.accuracy;
+
+        document.write(`위도: ${lat}`);
+        document.write("<br>")
+        document.write(`경도: ${lon}`);
+        document.write("<br>")
+        document.write(`정확도: ${accuracy} 미터`);
+       });
+    </script>
+
   </head>
   <body>
     <div id="root"></div>
