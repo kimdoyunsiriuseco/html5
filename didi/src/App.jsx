@@ -1,6 +1,7 @@
+// src/DidTime.jsx
 import {useState} from 'react';
 
-function App() {
+function DidTime() {
   const [did_time, set_did_time] = useState("");
 
   function getdate()
@@ -29,4 +30,4 @@ function App() {
   )
 }
 
-export default App
+export default DidTime
